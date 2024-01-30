@@ -1,0 +1,129 @@
+.sidebar {
+    width: 278px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+    overflow: auto;
+    padding: 10px 0;
+    /* border: 1px solid; */
+}
+
+.sidebar .logo {
+    margin-left: 20px;
+}
+
+.sidebar .logo svg {
+    width: 30px;
+    filter: invert();
+}
+
+.side_nav_item_box ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+.side_nav_item_box .side_nav_links .side_nav_link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.side_nav_item_box .side_nav_links .side_nav_link .inner_li {
+    max-width: 100%;
+    padding: 8px 20px;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.side_nav_item_box .side_nav_links .side_nav_link:hover .inner_li {
+    background-color: var(--bg-hover-color);
+}
+
+.side_nav_item_box .side_nav_links .side_nav_link .list_icon {
+    font-size: 32px;
+    font-weight: 300;
+    color: var(--primary-color-two);
+}
+
+.side_nav_item_box .side_nav_links .side_nav_link .list_name {
+    text-decoration: none;
+    color: var(--primary-color-two);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.btn_primary_blue {
+    background-color: var(--primary-color-three);
+    color: var(--primary-color-two);
+    width: 240px;
+    border-radius: 50px;
+    font-size: 18px;
+    padding: 12px 20px;
+    font-weight: 700;
+}
+
+.btn_primary_blue:hover {
+    background-color: #197fc4;
+}
+
+.user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 20px;
+    border-radius: 60px;
+    color: var(--primary-color-two);
+    width: 100%;
+}
+
+.user:hover {
+    background-color: var(--bg-hover-color);
+}
+
+.user_img {
+    width: 45px
+}
+
+.img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.user_profilebox .user_name h3 {
+    color: var(--primary-color-two);
+    font-size: 16px;
+    margin: 0;
+}
+
+.user_profilebox .user_name h4 {
+    font-size: 16px;
+    font-weight: 100;
+    color: var(--primary-color-two);
+    opacity: .5;
+    margin: 0;
+}
+
+.user_profilebox {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+}
+
+.isactive span {
+    font-weight: 700 !important;
+}
+
+.more_icon {
+    font-weight: 300;
+}

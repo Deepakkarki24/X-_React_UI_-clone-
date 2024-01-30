@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: var(--primary-color-one);
+  color: var(--primary-color-two);
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+:root {
+  --primary-color-one: #000;
+  --primary-color-two: #fff;
+  --primary-color-three: rgb(29, 155, 240);
+  --bg-hover-color: #91909034;
+  --border-line-color: #2F3336
+}
+
+.main {
+  padding: 0 3%;
+  display: flex;
+}
+
+.button {
+  background-color: var(--primary-color-three);
+  color: var(--primary-color-two);
+  border-radius: 50px;
+  font-size: 16px;
+  padding: 6px 18px;
+  font-weight: 700;
+}
