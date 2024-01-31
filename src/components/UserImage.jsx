@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../components/Sidebar.module.css";
+import styles from "../components/UserImage.module.css";
 
 function User() {
   return (

@@ -1,0 +1,52 @@
+.sidebarRight {
+    width: 370px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 6px;
+    padding-left: 2%;
+}
+
+.search {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background-color: transparent;
+    color: var(--primary-color-two);
+    text-indent: 18px;
+}
+
+.search_icon {
+    font-size: 24px;
+    color: rgb(111, 116, 121);
+}
+
+.search_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(32, 35, 39);
+    border-radius: 60px;
+    padding: 10px 16px;
+}
+
+.subscribe {
+    background-color: var(--primary-color-four);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 30px 0 20px 0;
+    width: 100%;
+}
+
+.subscribeTitle {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.desc {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    color: inherit;
+}

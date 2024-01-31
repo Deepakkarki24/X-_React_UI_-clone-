@@ -1,6 +1,7 @@
 import React from "react";
-import User from "./User";
+import User from "./UserImage";
 import styles from "../components/Feed.module.css";
+import "../App.css";
 
 function Feed() {
   return (
@@ -33,24 +34,48 @@ function Feed() {
         </div>
         <div className={styles.user_actions}>
           <div className={styles.icon_box}>
-            <span className={`material-symbols-outlined ${styles.action_icon}`}>
+            <a
+              title="Media"
+              href="#"
+              className={`material-symbols-outlined ${styles.action_icon} ${styles.tooltip}`}
+            >
               imagesmode
-            </span>
-            <span className={`material-symbols-outlined ${styles.action_icon}`}>
+            </a>
+            <a
+              title="Gif"
+              href="#"
+              className={`material-symbols-outlined ${styles.action_icon} ${styles.tooltip}`}
+            >
               gif_box
-            </span>
-            <span className={`material-symbols-outlined ${styles.action_icon}`}>
+            </a>
+            <a
+              title="Poll"
+              href="#"
+              className={`material-symbols-outlined ${styles.action_icon} ${styles.tooltip}`}
+            >
               ballot
-            </span>
-            <span className={`material-symbols-outlined ${styles.action_icon}`}>
+            </a>
+            <a
+              title="Emoji"
+              href="#"
+              className={`material-symbols-outlined ${styles.action_icon} ${styles.tooltip}`}
+            >
               sentiment_satisfied
-            </span>
-            <span className={`material-symbols-outlined ${styles.action_icon}`}>
+            </a>
+            <a
+              title="Schedule"
+              href="#"
+              className={`material-symbols-outlined ${styles.action_icon} ${styles.tooltip}`}
+            >
               calendar_clock
-            </span>
-            <span className={`material-symbols-outlined ${styles.action_icon}`}>
+            </a>
+            <a
+              title="Tag Location"
+              href="#"
+              className={`material-symbols-outlined ${styles.action_icon} ${styles.tooltip}`}
+            >
               location_on
-            </span>
+            </a>
           </div>
 
           <button type="button" className="btn btn-xs" disabled>

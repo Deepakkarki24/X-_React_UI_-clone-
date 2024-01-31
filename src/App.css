@@ -24,6 +24,7 @@ li {
   --primary-color-one: #000;
   --primary-color-two: #fff;
   --primary-color-three: rgb(29, 155, 240);
+  --primary-color-four: rgb(32, 35, 39);
   --bg-hover-color: #91909034;
   --border-line-color: #2F3336
 }
@@ -33,11 +34,17 @@ li {
   display: flex;
 }
 
-.button {
+.theme_button {
   background-color: var(--primary-color-three);
   color: var(--primary-color-two);
   border-radius: 50px;
   font-size: 16px;
   padding: 6px 18px;
   font-weight: 700;
+  border: none;
+}
+
+.theme_button:hover {
+  background-color: #1b8ad4;
+  color: #fff;
 }

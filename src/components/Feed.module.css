@@ -1,6 +1,6 @@
 .feed {
     border: 1px solid var(--border-line-color);
-    max-width: 600px;
+    width: 600px;
 }
 
 .top_navigation {
@@ -104,4 +104,26 @@
     display: flex;
     align-items: center;
     gap: 20px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+
+.tooltip:hover:after {
+    display: flex;
+    justify-content: center;
+    background: #ffffff91;
+    border-radius: 8px;
+    color: #fff;
+    content: attr(title);
+    font-size: 10px;
+    font-weight: 700;
+    padding: 6px;
+    position: absolute;
+    bottom: 100%;
+    right: 50%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

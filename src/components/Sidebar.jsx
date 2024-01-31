@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "../components/Sidebar.module.css";
-import User from "./User";
+import User from "./UserImage";
+import SidebarOptions from "./SidebarOptions";
 
 function Sidebar() {
   return (
@@ -17,97 +18,52 @@ function Sidebar() {
             </g>
           </svg>
         </div>
-        <div className={styles.side_nav_item_box}>
-          <ul className={styles.side_nav_links}>
-            <a href="#" className={styles.side_nav_link}>
-              <div className={`${styles.inner_li} ${styles.isactive}`}>
-                <span
-                  className={`material-symbols-outlined ${styles.list_icon}`}
-                >
-                  home
-                </span>{" "}
-                <span className={styles.list_name}>Home</span>
-              </div>
-            </a>
-            <a href="#" className={styles.side_nav_link}>
-              <div className={styles.inner_li}>
-                <span
-                  className={`material-symbols-outlined ${styles.list_icon}`}
-                >
-                  search
-                </span>{" "}
-                <span className={styles.list_name}>Explore</span>
-              </div>
-            </a>
-            <a href="#" className={styles.side_nav_link}>
-              <div className={styles.inner_li}>
-                <span
-                  className={`material-symbols-outlined ${styles.list_icon}`}
-                >
-                  notifications
-                </span>{" "}
-                <span className={styles.list_name}>Notification</span>
-              </div>
-            </a>
-            <a href="#" className={styles.side_nav_link}>
-              <div className={styles.inner_li}>
-                <span
-                  className={`material-symbols-outlined ${styles.list_icon}`}
-                >
-                  mail
-                </span>{" "}
-                <span className={styles.list_name}>Messages</span>
-              </div>
-            </a>
-            <a href="#" className={styles.side_nav_link}>
-              <div className={styles.inner_li}>
-                <span
-                  className={`material-symbols-outlined ${styles.list_icon}`}
-                >
-                  <span
-                    className={`material-symbols-outlined ${styles.list_icon}`}
-                  >
-                    featured_play_list
-                  </span>
-                </span>{" "}
-                <span className={styles.list_name}>Grok</span>
-              </div>
-            </a>
-            <a href="#" className={styles.side_nav_link}>
-              <div className={styles.inner_li}>
-                <span
-                  className={`material-symbols-outlined ${styles.list_icon}`}
-                >
-                  box
-                </span>{" "}
-                <span className={styles.list_name}>Lists</span>
-              </div>
-            </a>
-            <a href="#" className={styles.side_nav_link}>
-              <div className={styles.inner_li}>
-                <span
-                  className={`material-symbols-outlined ${styles.list_icon}`}
-                >
-                  person
-                </span>{" "}
-                <span className={styles.list_name}>Profile</span>
-              </div>
-            </a>
-            <a href="#" className={styles.side_nav_link}>
-              <div className={styles.inner_li}>
-                <span
-                  className={`material-symbols-outlined ${styles.list_icon}`}
-                >
-                  more_horiz
-                </span>{" "}
-                <span className={styles.list_name}>More</span>
-              </div>
-            </a>
-          </ul>
-          <button className={`${styles.btn} ${styles.btn_primary_blue}`}>
-            Post
-          </button>
-        </div>
+        {/* Sidebar Options component */}
+        <SidebarOptions
+          optionName={"Home"}
+          optionIconName={"Home"}
+          isActiveClass={styles.isactive}
+        />
+        <SidebarOptions
+          optionName={"Explore"}
+          optionIconName={"search"}
+          isActiveClass={styles.isntactive}
+        />
+        <SidebarOptions
+          optionName={"Notifications"}
+          optionIconName={"notifications"}
+          isActiveClass={styles.isntactive}
+        />
+        <SidebarOptions
+          optionName={"Messages"}
+          optionIconName={"mail"}
+          isActiveClass={styles.isntactive}
+        />
+        <SidebarOptions
+          optionName={"Grok"}
+          optionIconName={"featured_play_list"}
+          isActiveClass={styles.isntactive}
+        />
+        <SidebarOptions
+          optionName={"Lists"}
+          optionIconName={"box"}
+          isActiveClass={styles.isntactive}
+        />
+        <SidebarOptions
+          optionName={"Profile"}
+          optionIconName={"Person"}
+          isActiveClass={styles.isntactive}
+        />
+        <SidebarOptions
+          optionName={"More"}
+          optionIconName={"more_horiz"}
+          isActiveClass={styles.isntactive}
+        />
+        {/* Sidebar Options component */}
+
+        <button className={`${styles.btn} ${styles.btn_primary_blue}`}>
+          Post
+        </button>
       </div>
 
       <a href="#" className={styles.user}>
