@@ -2,14 +2,16 @@
     width: 278px;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    max-height: 100vh;
     justify-content: space-between;
     overflow: auto;
     padding: 10px 0;
+    position: relative;
 }
 
 .sidebar .logo {
     margin-left: 20px;
+    margin-bottom: 10px;
 }
 
 .sidebar .logo svg {

@@ -1,7 +1,7 @@
 .side_nav_links {
     list-style: none;
     padding: 0;
-    margin: 10px 0;
+    margin-bottom: 4px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

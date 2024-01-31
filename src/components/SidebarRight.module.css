@@ -1,11 +1,13 @@
 .sidebarRight {
     width: 370px;
-    overflow: hidden;
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     padding-top: 6px;
-    padding-left: 2%;
+    padding-left: 2.5%;
+    /* max-height: 130vh; */
+    position: relative;
 }
 
 .search {
@@ -34,12 +36,13 @@
 .subscribe {
     background-color: var(--primary-color-four);
     border-radius: 10px;
-    padding: 10px;
-    margin: 30px 0 20px 0;
+    padding: 10px 16px;
+    margin: 18px 0;
     width: 100%;
+    position: relative;
 }
 
-.subscribeTitle {
+.title {
     font-weight: 700;
     font-size: 22px;
 }
@@ -49,4 +52,17 @@
     line-height: 20px;
     font-weight: 400;
     color: inherit;
+}
+
+
+.trending_events_box {
+    overflow: hidden;
+}
+
+.box_style {
+    background-color: var(--primary-color-four);
+    border-radius: 10px;
+    padding: 10px 16px;
+    margin-bottom: 18px;
+    width: 100%;
 }

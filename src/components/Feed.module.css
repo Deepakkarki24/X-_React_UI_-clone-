@@ -1,6 +1,8 @@
 .feed {
     border: 1px solid var(--border-line-color);
+    border-bottom: none;
     width: 600px;
+    position: relative;
 }
 
 .top_navigation {
