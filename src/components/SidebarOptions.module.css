@@ -30,7 +30,7 @@
 }
 
 .list_icon {
-    font-size: 32px;
+    font-size: 31px !important;
     font-weight: 300;
     color: var(--primary-color-two);
 }

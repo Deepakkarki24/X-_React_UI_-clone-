@@ -20,6 +20,12 @@ li {
   list-style: none;
 }
 
+/* ::-webkit-scrollbar {
+  background-color: rgb(66, 66, 66);
+  scrollbar-color: rgb(123, 123, 123);
+} */
+
+
 :root {
   --primary-color-one: #000;
   --primary-color-two: #e7e9ea;

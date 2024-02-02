@@ -3,9 +3,18 @@ import styles from "../components/Sidebar.module.css";
 import User from "./UserImage";
 import SidebarOptions from "./SidebarOptions";
 
+import HomeIcon from "@mui/icons-material/Home";
+import SearcIcon from "@mui/icons-material/Search";
+import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
+import MailOutlineIcon from "@mui/icons-material/MailOutline";
+import CheckBoxOutlinedIcon from "@mui/icons-material/CheckBoxOutlined";
+import ChecklistIcon from "@mui/icons-material/Checklist";
+import PersonIcon from "@mui/icons-material/Person";
+import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
+
 function Sidebar() {
   return (
-    <div className={`${styles.sidebar} sticky-top`}>
+    <div className={styles.sidebar}>
       <div className={styles.sidebar_top}>
         <div className={styles.logo}>
           <svg
@@ -21,42 +30,42 @@ function Sidebar() {
         {/* Sidebar Options component */}
         <SidebarOptions
           optionName={"Home"}
-          optionIconName={"Home"}
+          Icon={HomeIcon}
           isActiveClass={styles.isactive}
         />
         <SidebarOptions
           optionName={"Explore"}
-          optionIconName={"search"}
+          Icon={SearcIcon}
           isActiveClass={styles.isntactive}
         />
         <SidebarOptions
           optionName={"Notifications"}
-          optionIconName={"notifications"}
+          Icon={NotificationsNoneIcon}
           isActiveClass={styles.isntactive}
         />
         <SidebarOptions
           optionName={"Messages"}
-          optionIconName={"mail"}
+          Icon={MailOutlineIcon}
           isActiveClass={styles.isntactive}
         />
         <SidebarOptions
           optionName={"Grok"}
-          optionIconName={"featured_play_list"}
+          Icon={CheckBoxOutlinedIcon}
           isActiveClass={styles.isntactive}
         />
         <SidebarOptions
           optionName={"Lists"}
-          optionIconName={"box"}
+          Icon={ChecklistIcon}
           isActiveClass={styles.isntactive}
         />
         <SidebarOptions
           optionName={"Profile"}
-          optionIconName={"Person"}
+          Icon={PersonIcon}
           isActiveClass={styles.isntactive}
         />
         <SidebarOptions
           optionName={"More"}
-          optionIconName={"more_horiz"}
+          Icon={MoreHorizIcon}
           isActiveClass={styles.isntactive}
         />
         {/* Sidebar Options component */}
@@ -74,9 +83,7 @@ function Sidebar() {
             <h4 className={styles.user_name}>@deepak_here24</h4>
           </div>
         </div>
-        <span className={`material-symbols-outlined ${styles.more_icon}`}>
-          more_horiz
-        </span>{" "}
+        <MoreHorizIcon className={styles.more_icon} />
       </a>
     </div>
   );

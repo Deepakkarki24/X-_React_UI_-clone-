@@ -56,7 +56,7 @@
 }
 
 .a .setting_icon {
-    font-size: 22px;
+    font-size: 32px !important;
     font-weight: 300;
     padding: 6px;
     border-radius: 50%;
@@ -80,7 +80,7 @@
 
 .action_icon {
     color: var(--primary-color-three);
-    font-size: 20px;
+    font-size: 18px !important;
 }
 
 .form_control {
@@ -108,24 +108,38 @@
     gap: 20px;
 }
 
+
+
 .tooltip {
-    position: relative;
-    display: inline-block;
-}
-
-
-.tooltip:hover:after {
-    display: flex;
-    justify-content: center;
     background: #ffffff91;
     border-radius: 8px;
     color: #fff;
-    content: attr(title);
+    content: "";
     font-size: 10px;
     font-weight: 700;
     padding: 6px;
     position: absolute;
     bottom: 100%;
+    opacity: 0;
     right: 50%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.icon_input:hover .tooltip {
+    opacity: 1;
+}
+
+.icon_input {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+input[type="file"] {
+    position: absolute;
+    opacity: 0;
+    width: 30px;
+    cursor: pointer;
 }

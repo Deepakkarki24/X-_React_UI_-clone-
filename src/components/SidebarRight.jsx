@@ -1,15 +1,21 @@
 import React from "react";
 import styles from "../components/SidebarRight.module.css";
 import TrendingEvent from "./TrendingEvent";
+import {
+  TwitterTimelineEmbed,
+  TwitterShareButton,
+  TwitterFollowButton,
+  TwitterHashtagButton,
+} from "react-twitter-embed";
 
-function SidebarRight({ subsTitle, subsContent, HandleContext }) {
+import SearcIcon from "@mui/icons-material/Search";
+
+function SidebarRight({ subsTitle, subsContent }) {
   return (
-    <div className={`${styles.sidebarRight} sticky-top`}>
+    <div className={styles.sidebarRight}>
       {/* search box area */}
       <div className={styles.search_box}>
-        <span className={`material-symbols-outlined ${styles.search_icon}`}>
-          search
-        </span>
+        <SearcIcon className={styles.search_icon} />
         <input type="search" placeholder="Search" className={styles.search} />
       </div>
       {/* search box area */}
@@ -26,33 +32,40 @@ function SidebarRight({ subsTitle, subsContent, HandleContext }) {
 
       {/* happening area */}
       <div className={`${styles.box_style} ${styles.happening}`}>
-        <h3 className={styles.title}>What’s happening</h3>
+        <h3 className={styles.title}>Post & Events</h3>
 
         <div className={styles.trending_events_box}>
+          <div className={styles.timelineEmbed}>
+            <TwitterTimelineEmbed
+              sourceType="profile"
+              screenName="deepak_here24"
+              options={{ height: 400 }}
+              theme="dark"
+            />
+          </div>
+          <div className={styles.follow_embed}>
+            <TwitterFollowButton screenName={"deepak_here24"} />
+          </div>
+          <div className={styles.hastagEmbed}>
+            <TwitterHashtagButton tag={"react"} />
+            <TwitterHashtagButton tag={"twitter"} />
+            <TwitterHashtagButton tag={"clone"} />
+          </div>
+          <div className={styles.shareEmbed}>
+            <TwitterShareButton
+              className={styles.tweetButton}
+              url={""}
+              options={{ text: "#reactjs is awesome", via: "deepak_here24" }}
+            />
+          </div>
+
+          {/* <TwitterHashtagButton tag={"cybersecurity"} /> */}
           {/* Trending Event component */}
           <TrendingEvent
-            trendingTop={"trending in India"}
+            trendingTop={"Trending in India"}
             trendingMiddle={"#DelhiNCR"}
             trendingBottom={"Trending with "}
             trendingBottomBlue={"#Delhirain"}
-          />
-          <TrendingEvent
-            trendingTop={"Trending"}
-            trendingMiddle={"#Paytm"}
-            trendingBottom={"Trending with "}
-            trendingBottomBlue={"Fastag"}
-          />
-          <TrendingEvent
-            trendingTop={"News Trending"}
-            trendingMiddle={"#Breaking News"}
-            trendingBottom={"35k posts"}
-            trendingBottomBlue={""}
-          />{" "}
-          <TrendingEvent
-            trendingTop={"Business & Finance"}
-            trendingMiddle={"#Suzlon"}
-            trendingBottom={""}
-            trendingBottomBlue={""}
           />
           {/* Trending Event component */}
         </div>

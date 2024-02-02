@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../components/TrendingEvent.module.css";
+import MoreHoriz from "@mui/icons-material/MoreHoriz";
 
 function TrendingEvent({
   trendingTop,
@@ -17,9 +18,7 @@ function TrendingEvent({
           <span className="text-primary fw-normal">{trendingBottomBlue}</span>
         </h4>
       </div>
-      <span className={`material-symbols-outlined ${styles.icon}`}>
-        more_horiz
-      </span>{" "}
+      <MoreHoriz className={styles.icon} />
     </div>
   );
 }
