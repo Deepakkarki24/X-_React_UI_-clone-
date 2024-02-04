@@ -1,0 +1,24 @@
+.mobile_footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--primary-color-one);
+    height: 50px;
+    width: 100%;
+    display: none;
+}
+
+.icon {
+    font-size: 34px !important;
+    color: #fff;
+}
+
+@media (max-width:768px) {
+    .mobile_footer {
+        display: flex;
+    }
+
+}

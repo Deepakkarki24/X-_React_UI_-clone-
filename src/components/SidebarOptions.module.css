@@ -41,3 +41,9 @@
     font-size: 20px;
     font-weight: 400;
 }
+
+@media (min-width: 768px) and (max-width: 884px) {
+    .list_name {
+        display: none;
+    }
+}

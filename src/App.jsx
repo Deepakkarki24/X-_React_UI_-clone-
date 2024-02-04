@@ -3,6 +3,7 @@ import Feed from "./components/Feed";
 import Sidebar from "./components/Sidebar";
 import { useState } from "react";
 import SidebarRight from "./components/SidebarRight";
+import MobileNav from "./components/MobileNav";
 
 function App() {
   const [subsTitleText, setSubsTitleText] = useState("Subscribe to Premium");
@@ -29,6 +30,7 @@ function App() {
           subsContent={subsContText}
           // HandleContext={HandleContext}
         />
+        <MobileNav />
       </div>
     </>
   );
