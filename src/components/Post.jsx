@@ -8,33 +8,35 @@ import ChatBubbleOutlineOutlinedIcon from "@mui/icons-material/ChatBubbleOutline
 import AutorenewOutlinedIcon from "@mui/icons-material/AutorenewOutlined";
 import IosShareOutlinedIcon from "@mui/icons-material/IosShareOutlined";
 
-function Post() {
+function Post({ avatar, displayName, userName, verified, text, image }) {
   return (
     <div className={styles.post_wrapper}>
       <div className={styles.post_box}>
         <div className={styles.post_header}>
           <div className={styles.user_det}>
             <div className="avatar">
-              <Avatar src="./src/assets/images/profile.jpg" />
+              <Avatar src={avatar} />
             </div>
             <div className={styles.display_name}>
-              <h3>Deepak Karki</h3>
+              <h3>{displayName}</h3>
             </div>
             <div className="verified_icon flex items-center">
-              <VerifiedOutlinedIcon className={styles.verified_ico} />
+              {verified && (
+                <VerifiedOutlinedIcon className={styles.verified_ico} />
+              )}
             </div>
             <div className={styles.user_name}>
-              <h4>deepak_here24</h4>
+              <h4>@{userName}</h4>
             </div>
           </div>
           <MoreHoriz className={styles.more_icon} />
         </div>
         <div className={styles.post_content}>
           <div className={styles.caption}>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>{text}</p>
           </div>
           <div className={styles.post}>
-            <img src="https://i.gifer.com/7rF1.gif" alt="" />
+            <img src={image} alt="post" />
           </div>
           <div className={styles.engagement_action_box}>
             <div className={styles.action_icon_box}>
