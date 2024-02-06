@@ -1,7 +1,7 @@
 .feed {
     border: 1px solid var(--border-line-color);
     border-bottom: none;
-    width: 600px;
+    width: 700px;
     position: relative;
     height: 200vh;
 }
@@ -145,20 +145,40 @@
     cursor: pointer;
 }
 
-input[type="file"] {
-    position: absolute;
-    opacity: 0;
-    width: 30px;
+input {
     cursor: pointer;
+    border: 1px solid var(--primary-color-three);
+    border-radius: 6px;
+    background-color: transparent;
+    padding: 10px;
+    font-size: 13px;
+    color: var(--primary-color-three);
+    width: 36%;
 }
 
 @media (max-width: 768px) {
+    input {
+        width: 65%;
+    }
+
     .feed {
-        width: 370px;
+        width: 360px;
+    }
+
+    .icon_box {
+        gap: 16px;
+    }
+
+    .post_section {
+        display: none;
+    }
+
+    .user_actions {
+        width: 90%;
     }
 
     .post_section_mob {
-        position: absolute;
+        position: fixed;
         background-color: #000;
         z-index: 9;
         top: 0;
@@ -166,7 +186,7 @@ input[type="file"] {
         height: 100vh;
         padding: 18px 0;
         left: 0;
-        /* display: none; */
+        display: block;
     }
 
     .sticky_icon_mob {
@@ -189,6 +209,11 @@ input[type="file"] {
     .back_icon_box {
         display: block !important;
     }
+
+    .mob_hide {
+        display: block !important;
+    }
+
 }
 
 @media (min-width: 768px) and (max-width: 884px) {
@@ -214,6 +239,7 @@ input[type="file"] {
     position: fixed;
     right: 6%;
     bottom: 100px;
+    z-index: 99;
     visibility: hidden;
 }
 
@@ -242,5 +268,9 @@ input[type="file"] {
 }
 
 .back_icon_box {
+    display: none;
+}
+
+.mob_hide {
     display: none;
 }

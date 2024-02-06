@@ -27,6 +27,9 @@ function Feed() {
 
     return () => unsubscribe(); // Cleanup on component unmount
   }, []);
+
+  const [hidePostSec, setHidePostSec] = useState(false);
+
   return (
     <>
       <div className={styles.feed}>
@@ -61,7 +64,7 @@ function Feed() {
             </a>
           </div>
         </div>
-        <TweetBox />
+        <TweetBox showHidePostSec={hidePostSec} />
         {posts.map((post) => (
           <Post
             key={post.id}
@@ -73,7 +76,10 @@ function Feed() {
             image={post.image}
           />
         ))}
-        <div className={styles.sticky_icon_mob}>
+        <div
+          className={styles.sticky_icon_mob}
+          onClick={() => setHidePostSec(!hidePostSec)}
+        >
           <HistoryEduIcon fontSize="large" />
         </div>
       </div>
