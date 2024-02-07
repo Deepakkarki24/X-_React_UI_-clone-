@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import User from "./UserImage";
 import styles from "../components/Feed.module.css";
-import avtarProfile from "../assets/profile.jpg";
 
 import db from "./firebase";
 import { collection, addDoc } from "firebase/firestore";
@@ -25,7 +24,7 @@ function TweetBox({ showHidePostSec }) {
 
     try {
       await addDoc(addCollectionRef, {
-        avatar: avtarProfile,
+        avatar: "./src/assets/profile.jpg",
         displayName: "Deepak Karki",
         userName: "deepak_here24",
         verified: true, // Assuming verified is a boolean, adjust accordingly

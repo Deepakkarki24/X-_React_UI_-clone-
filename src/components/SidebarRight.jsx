@@ -44,7 +44,7 @@ function SidebarRight({ subsTitle, subsContent }) {
           />
           <TrendingEvent
             trendingTop={"Give Your Feedback as post"}
-            trendingMiddle={"FeedBack with Image or Gif 😎"}
+            trendingMiddle={"Feed back with image or gif 🤍"}
             trendingBottom={"Post your Feedback"}
             trendingBottomBlue={"#showlove"}
           />
