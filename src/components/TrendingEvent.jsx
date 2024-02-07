@@ -1,13 +1,8 @@
 import React from "react";
-import styles from "../components/TrendingEvent.module.css";
+import styles from "../components/SidebarRight.module.css";
 import MoreHoriz from "@mui/icons-material/MoreHoriz";
 
-function TrendingEvent({
-  trendingTop,
-  trendingMiddle,
-  trendingBottom,
-  trendingBottomBlue,
-}) {
+function TrendingEvent({ trendingTop, trendingBottom, trendingBottomBlue }) {
   return (
     <div className={styles.trending_event}>
       <div className="trending_context">

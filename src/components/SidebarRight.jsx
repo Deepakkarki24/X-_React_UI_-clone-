@@ -63,9 +63,9 @@ function SidebarRight({ subsTitle, subsContent }) {
           {/* Trending Event component */}
           <TrendingEvent
             trendingTop={"Trending in India"}
-            trendingMiddle={"#DelhiNCR"}
+            trendingMiddle={"#ReactJs"}
             trendingBottom={"Trending with "}
-            trendingBottomBlue={"#Delhirain"}
+            trendingBottomBlue={"#ReactJs"}
           />
           {/* Trending Event component */}
         </div>

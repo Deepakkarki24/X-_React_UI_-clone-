@@ -10,6 +10,8 @@ import { collection, getDocs, onSnapshot } from "firebase/firestore";
 import db from "./firebase";
 import TweetBox from "./TweetBox";
 
+import profile from "../assets/profile.jpg";
+
 function Feed() {
   const [posts, setPosts] = useState([]);
 
@@ -35,7 +37,7 @@ function Feed() {
       <div className={styles.feed}>
         <div className={styles.mob_top_nav}>
           <div className={styles.flex_top}>
-            <Avatar src="src/assets/images/profile.jpg" />
+            <Avatar src={profile} />
             <div className={styles.logo}>
               <svg
                 viewBox="0 0 24 24"

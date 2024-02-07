@@ -1,13 +1,7 @@
 import React, { useState } from "react";
 import User from "./UserImage";
 import styles from "../components/Feed.module.css";
-
-import MmsIcon from "@mui/icons-material/Mms";
-import GifBoxOutlinedIcon from "@mui/icons-material/GifBoxOutlined";
-import BallotOutlinedIcon from "@mui/icons-material/BallotOutlined";
-import SentimentSatisfiedOutlinedIcon from "@mui/icons-material/SentimentSatisfiedOutlined";
-import CalendarMonthOutlinedIcon from "@mui/icons-material/CalendarMonthOutlined";
-import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
+import avtarProfile from "../assets/profile.jpg";
 
 import db from "./firebase";
 import { collection, addDoc } from "firebase/firestore";
@@ -31,7 +25,7 @@ function TweetBox({ showHidePostSec }) {
 
     try {
       await addDoc(addCollectionRef, {
-        avatar: "/src/assets/images/profile.jpg",
+        avatar: avtarProfile,
         displayName: "Deepak Karki",
         userName: "deepak_here24",
         verified: true, // Assuming verified is a boolean, adjust accordingly
@@ -66,7 +60,7 @@ function TweetBox({ showHidePostSec }) {
               type="text"
               id="file"
               value={tweetImage}
-              placeholder="Enter your URL (image, gif, video"
+              placeholder="Enter your URL (image, gif, video)"
               onChange={handleImageChange}
             />
             <button

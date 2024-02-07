@@ -11,15 +11,6 @@ function App() {
     "Subscribe to unlock new features and if eligible, receive a share of ads revenue"
   );
 
-  // const HandleContext = (title, text) => {
-  //   const titleText = "Subscribe to Premium222";
-  //   setSubsTitleText(titleText);
-
-  //   const contentText =
-  //     "Subscribe to unlock new features and if eligible, receive a share of ads revenue";
-  //   setSubsContText(contentText);
-  // };
-
   return (
     <>
       <div className="main container-fluid">

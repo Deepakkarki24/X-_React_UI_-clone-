@@ -102,3 +102,40 @@
         display: none;
     }
 }
+
+.trending_event {
+    margin: 18px 0 30px 0;
+}
+
+.fadeTitle {
+    font-size: 13px;
+    color: var(--fade-text-color);
+    margin: 0;
+    padding: 0;
+}
+
+.boldTitle {
+    font-size: 16px;
+    color: var(--primary-color-two);
+    margin: 0;
+    padding: 0;
+}
+
+.trending_event {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.icon {
+    color: var(--fade-text-color);
+    font-size: 22px;
+}
+
+.box_style {
+    background-color: var(--primary-color-four);
+    border-radius: 10px;
+    padding: 10px 16px;
+    margin: 18px 0;
+    width: 100%;
+}

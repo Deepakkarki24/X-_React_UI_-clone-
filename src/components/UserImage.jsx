@@ -1,11 +1,12 @@
 import React from "react";
-import styles from "../components/UserImage.module.css";
+import "../App.css";
 import Avatar from "@mui/material/Avatar";
+import profile from "../assets/profile.jpg";
 
 function User() {
   return (
-    <div className={styles.user_img}>
-      <Avatar src="./src/assets/images/profile.jpg" />
+    <div className="user_img">
+      <Avatar src={profile} />
     </div>
   );
 }
